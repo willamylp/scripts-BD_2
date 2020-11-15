@@ -1,0 +1,8 @@
+DELIMITER //
+CREATE OR REPLACE PROCEDURE AoQuadrado(valor int) CONTAINS SQL 
+BEGIN 
+	SELECT POWER(valor,2);
+END //
+DELIMITER ;
+
+CALL AoQuadrado(4);

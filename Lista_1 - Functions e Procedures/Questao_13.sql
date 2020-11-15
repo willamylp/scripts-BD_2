@@ -1,0 +1,5 @@
+DROP INDEX IF EXISTS IDX_SIGLA ON departamento;
+CREATE INDEX IDX_SIGLA ON departamento(sigla);
+
+DROP INDEX IF EXISTS IDX_SITUACAO ON atividade;
+CREATE INDEX IDX_SITUACAO ON atividade(situacao);
